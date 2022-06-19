@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/jpg" />
+    <title>Archivos Multimedia en HTML</title>
+    <style>
+      h2 {
+        color: ghostwhite;
+        font-size: 50px;
+        text-align: center;
+        background-color: black;
+        margin-bottom: 2px;
+        border-bottom-style: outset;
+        border-bottom-color: yellow;
+      }
+      header {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 35%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        color: white;
+        text-align: center;
+        font-size: 30px;
+      }
+      h3 {
+        background-color: aqua;
+        width: 50%;
+        font-weight: bold;
+      }
+      img {
+        border: 2px solid;
+        border-color: green;
+        background-color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ARCHIVOS MULTIMEDIA EN HTML</h1>
+      <h2>&lt;img&gt;,&lt;video&gt; y &lt;audio&gt;</h2>
+    </header>
+    <main>
+      <!-- section de imagenes -->
+      <section>
+        <h2>IMAGENES</h2>
+        <img src="img/logo.jpg" alt="Logo de mi pagina web" width="30%" />
+        <img src="img/tierra.jpg" alt="Logo de la tierra" width="30%" />
+        <img src="img/tierra.jpg" alt="Logo de la tierra" width="30%" />
+        <img src="img/tierra.jpg" alt="Logo de la tierra" width="30%" />
+        <img src="img/tierra.jpg" alt="Logo de la tierra" width="30%" />
+        <img src="img/tierra.jpg" alt="Logo de la tierra" width="30%" />
+
+        <ol>
+          <li>
+            <a
+              href="https://graffica.info/wp-content/uploads/2017/08/LogoNasaSpotB-1200x900.jpg"
+              title="Descagar Logo Nasa"
+              >Descargar Logo Nasa</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.fao.org/fileadmin/user_upload/soils-2015/images/ES/logo_only.jpg"
+              title="Imagen 2"
+              >Descargar Segunda Imagen</a
+            >
+          </li>
+        </ol>
+      </section>
+      <!-- SECTION DE VIDEOS -->
+      <section>
+        <h2>VIDEOS</h2>
+        <h3>VIDEOS LOCALES</h3>
+        <video src="videos/Video1.mp4" controls width="50%"></video>
+        <h3>VIDEOS LOCALES DE DIFERENTES FORMATOS</h3>
+        <video width="640" height="480" controls>
+          <source src="videos/Video1.mp4" type="video/mp4" />
+          <source src="video.webm" type="video/webm" />
+          <source src="video.ogv" type="video/ogg" />
+          <img src="imagen.png" alt="Video no soportado" />
+          Su navegador no soporta contenido multimedia.
+        </video>
+        <h3>VIDEOS DE YOUTUBE</h3>
+        <!-- ETIQUETA IFRAME -->
+        <iframe
+          src="https://www.youtube.com/embed/b5BNUa_op2o"
+          width="560"
+          height="315"
+        >
+        </iframe>
+
+        <h3>ABRIR OTRAS PÁGINAS</h3>
+
+        <a href="https://www.redcomcibernetico.es/quienes-somos" target="pagina"
+          >Abrir Página</a
+        ><br />
+        <iframe
+          name="pagina"
+          width="1060"
+          height="515"
+          src="https://www.redcomcibernetico.es/quienes-somos"
+        ></iframe>
+        <h3>TEXTO DENTRO DE UN IFRAME</h3>
+        <iframe
+          src="http://pagina.com/apartado/"
+          srcdoc="<p>¡Hola! ¡Soy el <strong>texto del iframe</strong>!</p>"
+        ></iframe>
+      </section>
+
+      <section>
+        <h2>ETIQUETA OBJECT</h2>
+        <object type="application/x-shockwave-flash">
+          <param
+            name="movie"
+            value="http://video.example.com/library/watch.swf"
+          />
+          <param name="allowfullscreen" value="true" />
+          <param
+            name="flashvars"
+            value="http://video.example.com/vids/315981"
+          />
+          Contenido multimedia no soportado.
+        </object>
+      </section>
+
+      <section>
+        <h2>AUDIO</h2>
+        <audio src="audios/audio.mp3#t=52" controls loop></audio>
+      </section>
+      <section>
+        <h2>GOOGLE MAPS</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31035.45414039134!2d-88.89061712206593!3d13.5090739208071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7cac9ceeb1809d%3A0x28a18f5d29f4d3c1!2sZacatecoluca!5e0!3m2!1ses-419!2ssv!4v1655526168130!5m2!1ses-419!2ssv"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <section>
+        <h2>Redes sociales</h2>
+        <h3>TWITTER</h3>
+        <blockquote class="twitter-tweet">
+          <p lang="es" dir="ltr">
+            Ser padre es ir caminando siempre hacia adelante, trabajando
+            incansablemente, cumpliendo metas, logrando lo imposible, sin quitar
+            la mirada de su familia. ❤️<br /><br />Ser padre es vivir cada día
+            <a
+              href="https://twitter.com/hashtag/UnMomento%C3%9Anico?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#UnMomentoÚnico</a
+            >
+            🇸🇻<br /><br />¡Feliz Día del Padre! 🎉✨
+            <a href="https://t.co/xnAhvyWyzn">pic.twitter.com/xnAhvyWyzn</a>
+          </p>
+          &mdash; Casa Presidencial 🇸🇻 (@PresidenciaSV)
+          <a
+            href="https://twitter.com/PresidenciaSV/status/1537822345171288068?ref_src=twsrc%5Etfw"
+            >June 17, 2022</a
+          >
+        </blockquote>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+
+        <h3>TIK TOK</h3>
+        <blockquote
+          class="tiktok-embed"
+          cite="https://www.tiktok.com/@thatlittlepuff/video/7104467377353575726"
+          data-video-id="7104467377353575726"
+          style="max-width: 605px; min-width: 325px"
+        >
+          <section>
+            <a
+              target="_blank"
+              title="@thatlittlepuff"
+              href="https://www.tiktok.com/@thatlittlepuff"
+              >@thatlittlepuff</a
+            >
+            The last hack could save your party!
+            <a
+              title="thatlittlepuff"
+              target="_blank"
+              href="https://www.tiktok.com/tag/thatlittlepuff"
+              >#ThatLittlePuff</a
+            >
+            <a
+              title="puffknowsbetter"
+              target="_blank"
+              href="https://www.tiktok.com/tag/puffknowsbetter"
+              >#puffknowsbetter</a
+            >
+            <a
+              title="catsoftiktok"
+              target="_blank"
+              href="https://www.tiktok.com/tag/catsoftiktok"
+              >#catsoftiktok</a
+            >
+            <a
+              target="_blank"
+              title="♬ original sound - ThatLittlePuff"
+              href="https://www.tiktok.com/music/original-sound-7104467356530625326"
+              >♬ original sound - ThatLittlePuff</a
+            >
+          </section>
+        </blockquote>
+        <script async src="https://www.tiktok.com/embed.js"></script>
+        <h2>FACEBOOK</h2>
+        <iframe
+          src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fsmartproacademy%2Fvideos%2F462678742279573%2F&show_text=false&width=476&t=0"
+          width="476"
+          height="476"
+          style="border: none; overflow: hidden"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          allowfullscreen="true"
+        ></iframe>
+      </section>
+
+      <section>
+        <h2>VISUALIZAR PDF</h2>
+        <embed
+          src="https://www.aragonemprendedor.com/archivos/descargas/html.pdf"
+          type="application/pdf"
+          width="50%"
+          height="400px"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <h2>PIE DE PAGINA</h2>
+    </footer>
+  </body>
+</html>
